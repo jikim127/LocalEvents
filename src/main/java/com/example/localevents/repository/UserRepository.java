@@ -11,12 +11,9 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-//    User save(User user);
-//    Optional<User> findById(Long idNo);
-//    Optional<User> findByName(String id);
-//    List<User> findAll();
 
-    Optional<User> findByEmail(String email); // email로 사용자 정보 가져옴
+    User findByEmail(String email); // 회원가입시 중복회원이 있는지 이메일로 회원검사
+
 
 //    @EntityGraph(attributePaths = "roleSet")
 //    @Query("select u from User u where u.id = :id and u.social = false ")

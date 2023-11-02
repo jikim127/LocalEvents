@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class CalendarController {
 
-    @GetMapping({"/index", "/login","/about-us", "/blog", "/blog-details", "/calendar", "/events", "/favSpot", "/leports"})
+    @GetMapping({"/about-us", "/blog", "/blog-details", "/calendar", "/events", "/favSpot", "/leports"})
     public void main() {
     }
 

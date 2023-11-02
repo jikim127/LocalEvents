@@ -2,8 +2,6 @@ package com.example.localevents.controller;
 
 import com.example.localevents.api.GoogleLoginResponse;
 import com.example.localevents.api.GoogleOAuthRequest;
-import com.example.localevents.entity.User;
-import com.example.localevents.service.ApiRestService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -17,9 +15,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @RestController
 @Slf4j

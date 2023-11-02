@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class CalendarController {
 
-    @GetMapping({"/index", "/about-us", "/blog", "/blog-details", "/contact", "/main", "/schedule", "/speaker"})
+    @GetMapping({"/index", "/login","/about-us", "/blog", "/blog-details", "/calendar", "/events", "/favSpot", "/leports"})
     public void main() {
     }
 
-    @GetMapping("/calendar")
-    public String calendar(Model model) {
-        model.addAttribute("data","hello!!");
-        return "calendar";
-    }
+//    @GetMapping("/calendar")
+//    public String calendar(Model model) {
+//        model.addAttribute("data","hello!!");
+//        return "calendar";
+//    }
 }
